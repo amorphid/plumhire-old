@@ -1,0 +1,16 @@
+<h1>Jobs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        Title
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% jobs.forEach(function (job) { %>
+      <%= JST["views/jobs/_job"](job) %>
+    <% }) %>
+  </tbody>
+</table>
